@@ -2,27 +2,35 @@
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/esdesign.svg)](https://www.npmjs.com/package/esdesign) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/esd.svg)](https://www.npmjs.com/package/esd) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save esdesign
+npm i esdesign
 ```
 
-## Usage
+# Usage
+
+##Example
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'esdesign'
+import { Button } from 'esdesign'
 import 'esdesign/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function App() {
+  return (
+    <div className='App'>
+      <Button text='merhaba' type='primary' />
+    </div>
+  )
 }
+```
+
+And import css file manually:
+
+```jsx
+import 'esdesign/dist/index.css'
 ```
 
 ## License
